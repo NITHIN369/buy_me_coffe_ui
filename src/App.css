@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.nameInput{
+  margin-bottom: 4%;
+}
+.messageBox{
+  display: flex;
+  align-items: center;
+  width:50%;
+  margin-left: 36%;
+}
