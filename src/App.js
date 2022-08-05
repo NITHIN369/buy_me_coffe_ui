@@ -34,6 +34,7 @@ function App() {
       setCurrentAccount(accounts[0]);
       console.log("Successfully connected to wallet: ",accounts[0]);
       setWalletConnected(true)
+      getMemos();
     }
   } 
   function nameHandler(e){
@@ -107,7 +108,7 @@ function App() {
           <button onClick={BuyMeCoffe}>Send 0.001Eth to Nithin</button>
         </>
       )}
-      {memos && <h2>My Friends who bought me Coffee!!</h2>}
+      {memos.length>0 && <h2>My Friends who bought me Coffee!!</h2>}
       {memos &&
         memos.map((memo) => {
           return (
